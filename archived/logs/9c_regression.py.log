@@ -1,0 +1,40 @@
+shape (189, 3)
+columns Index(['const', 'image', 'affect'], dtype='object')
+                      Generalized Linear Model Regression Results                       
+========================================================================================
+Dep. Variable:     ['censored', 'not_censored']   No. Observations:                  189
+Model:                                      GLM   Df Residuals:                      186
+Model Family:                          Binomial   Df Model:                            2
+Link Function:                            Logit   Scale:                          1.0000
+Method:                                    IRLS   Log-Likelihood:                -370.08
+Date:                          Sun, 25 Dec 2022   Deviance:                       420.91
+Time:                                  17:08:30   Pearson chi2:                     491.
+No. Iterations:                              15   Pseudo R-squ. (CS):              1.000
+Covariance Type:                      nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -5.9924      0.002  -3730.474      0.000      -5.996      -5.989
+image         17.6580      0.144    122.333      0.000      17.375      17.941
+affect         0.0067      0.001     12.907      0.000       0.006       0.008
+==============================================================================
+shape (2834, 3)
+columns Index(['const', 'cogproc', 'social'], dtype='object')
+                      Generalized Linear Model Regression Results                       
+========================================================================================
+Dep. Variable:     ['censored', 'not_censored']   No. Observations:                 2834
+Model:                                      GLM   Df Residuals:                     2831
+Model Family:                          Binomial   Df Model:                            2
+Link Function:                            Logit   Scale:                          1.0000
+Method:                                    IRLS   Log-Likelihood:                -5701.7
+Date:                          Sun, 25 Dec 2022   Deviance:                       2900.7
+Time:                                  17:27:15   Pearson chi2:                 3.46e+03
+No. Iterations:                               8   Pseudo R-squ. (CS):            0.08680
+Covariance Type:                      nonrobust                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -3.5745      0.000  -7196.405      0.000      -3.575      -3.574
+cogproc        0.0014      0.000     10.999      0.000       0.001       0.002
+social         0.0004      0.000      2.333      0.020    7.19e-05       0.001
+==============================================================================

@@ -1,0 +1,377 @@
+[1] "Starting Preprocessing"
+[1] "2022-09-21 18:38:54 EDT"
+[1] "Starting first load."
+[1] "2022-09-21 18:38:54 EDT"
+[1] "Starting first models."
+[1] "2022-09-21 18:43:08 EDT"
+[1] 22682284      100
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+              Coef    (95%     CI)     SE p
+(Intercept) -5.415 -5.4214 -5.4086 0.0032 0
+image       17.192 16.2975 18.0865 0.4472 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                         Coef    (95%     CI)     SE p
+(Intercept)           -3.3841 -3.3871 -3.3811 0.0015 0
+functionFunctionWords  0.0006  0.0004  0.0008 0.0001 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                   Coef    (95%     CI)     SE      p
+(Intercept)     -3.3789 -3.3816 -3.3763 0.0013 0.0000
+pronounPronouns  0.0013  0.0002  0.0024 0.0005 0.0196
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                         Coef    (95%     CI)     SE      p
+(Intercept)           -3.3781 -3.3807 -3.3755 0.0013 0.0000
+ppronPersonalPronouns  0.0008 -0.0006  0.0022 0.0007 0.2604
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3779 -3.3804 -3.3754 0.0013 0.000
+iI           0.0012 -0.0014  0.0039 0.0013 0.354
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3776 -3.3800 -3.3752 0.0012 0.0000
+weWe         0.0021 -0.0047  0.0089 0.0034 0.5345
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3771 -3.3796 -3.3746 0.0012 0.0000
+youYou      -0.0014 -0.0042  0.0014 0.0014 0.3162
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3777 -3.3801 -3.3753 0.0012 0.0000
+sheheSheHe   0.0032 -0.0016  0.0081 0.0024 0.1777
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3778 -3.3801 -3.3754 0.0012 0.0000
+theyThey     0.0163  0.0035  0.0292 0.0064 0.0109
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3779 -3.3803 -3.3756 0.0012 0e+00
+youpl        0.0261  0.0119  0.0403 0.0071 2e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                           Coef    (95%     CI)     SE     p
+(Intercept)             -3.3791 -3.3817 -3.3766 0.0013 0e+00
+ipronImpersonalPronouns  0.0046  0.0020  0.0073 0.0013 4e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                    Coef    (95%     CI)     SE p
+(Intercept)      -3.3825 -3.3852 -3.3798 0.0014 0
+prepPrepositions  0.0056  0.0041  0.0070 0.0007 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                         Coef    (95%     CI)     SE     p
+(Intercept)           -3.3797 -3.3823 -3.3771 0.0013 0e+00
+auxverbAuxiliaryVerbs  0.0043  0.0022  0.0065 0.0011 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                 Coef    (95%     CI)     SE p
+(Intercept)   -3.3821 -3.3849 -3.3793 0.0014 0
+adverbAdverbs  0.0028  0.0019  0.0038 0.0005 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                    Coef    (95%     CI)     SE p
+(Intercept)      -3.3809 -3.3835 -3.3782 0.0013 0
+conjConjunctions  0.0044  0.0028  0.0060 0.0008 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                   Coef    (95%     CI)     SE p
+(Intercept)     -3.3803 -3.3829 -3.3777 0.0013 0
+negateNegations  0.0068  0.0044  0.0093 0.0012 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3796 -3.3822 -3.3770 0.0013 0
+quanunit     0.0043  0.0022  0.0064 0.0010 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3793 -3.3818 -3.3767 0.0013 0e+00
+prepend      0.0063  0.0030  0.0097 0.0017 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3789 -3.3814 -3.3765 0.0012 0e+00
+specart      0.0089  0.0044  0.0133 0.0022 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3814 -3.3841 -3.3787 0.0014 0
+tensem       0.0045  0.0030  0.0060 0.0008 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                      Coef    (95%     CI)     SE     p
+(Intercept)        -3.3786 -3.3811 -3.3762 0.0012 0e+00
+focuspastPastFocus  0.0086  0.0035  0.0137 0.0025 7e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                            Coef    (95%     CI)     SE p
+(Intercept)              -3.3792 -3.3817 -3.3767 0.0012 0
+focuspresentPresentFocus  0.0097  0.0051  0.0142 0.0023 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%     CI)     SE     p
+(Intercept)            -3.3791 -3.3815 -3.3766 0.0012 0e+00
+focusfutureFutureFocus  0.0078  0.0038  0.0118 0.0020 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3793 -3.3819 -3.3767 0.0013 0e+00
+progm        0.0051  0.0022  0.0080 0.0015 5e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3829 -3.3858 -3.3800 0.0015 0
+particle     0.0025  0.0017  0.0033 0.0004 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3802 -3.3829 -3.3775 0.0013 0
+modal_pa     0.0044  0.0023  0.0064 0.0010 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3824 -3.3853 -3.3796 0.0014 0
+general_pa   0.0032  0.0022  0.0043 0.0005 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                      Coef    (95%     CI)     SE p
+(Intercept)        -3.3809 -3.3835 -3.3783 0.0013 0
+compareComparisons  0.0065  0.0043  0.0087 0.0011 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%     CI)     SE     p
+(Intercept)            -3.3786 -3.3810 -3.3761 0.0012 0e+00
+interrogInterrogatives  0.0104  0.0046  0.0162 0.0029 3e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                 Coef    (95%     CI)     SE      p
+(Intercept)   -3.3787 -3.3812 -3.3762 0.0013 0.0000
+numberNumbers  0.0035  0.0010  0.0060 0.0013 0.0054
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                    Coef    (95%     CI)     SE     p
+(Intercept)      -3.3797 -3.3823 -3.3771 0.0013 0e+00
+quantQuantifiers  0.0040  0.0020  0.0061 0.0010 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE p
+(Intercept)  -3.3807 -3.3835 -3.3779 0.0014 0
+affectAffect  0.0020  0.0010  0.0029 0.0005 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%     CI)     SE      p
+(Intercept)            -3.3787 -3.3815 -3.3760 0.0014 0.0000
+posemoPositiveEmotions  0.0014 -0.0001  0.0029 0.0008 0.0693
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%     CI)     SE p
+(Intercept)            -3.3802 -3.3828 -3.3777 0.0013 0
+negemoNegativeEmotions  0.0047  0.0030  0.0065 0.0009 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3771 -3.3795 -3.3747 0.0012 0.0000
+anxAnx      -0.0066 -0.0145  0.0014 0.0040 0.0972
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3791 -3.3815 -3.3767 0.0012 0
+angerAnger   0.0180  0.0123  0.0236 0.0028 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3772 -3.3796 -3.3748 0.0012 0.0000
+sadSad      -0.0034 -0.0091  0.0024 0.0029 0.2423
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE     p
+(Intercept)  -3.3802 -3.3829 -3.3775 0.0014 0e+00
+socialSocial  0.0018  0.0009  0.0026 0.0004 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE     p
+(Intercept)  -3.3782 -3.3806 -3.3758 0.0012 0.000
+familyFamily  0.0072  0.0028  0.0116 0.0022 0.001
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                 Coef    (95%     CI)     SE      p
+(Intercept)   -3.3777 -3.3801 -3.3753 0.0012 0.0000
+friendFriends  0.0042 -0.0037  0.0121 0.0039 0.2842
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE      p
+(Intercept)  -3.3774 -3.3798 -3.3750 0.0012 0.0000
+femaleFemale -0.0004 -0.0046  0.0038 0.0021 0.8468
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3783 -3.3807 -3.3759 0.0012 0e+00
+maleMale     0.0079  0.0034  0.0124 0.0023 5e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                             Coef    (95%     CI)     SE p
+(Intercept)               -3.3824 -3.3852 -3.3796 0.0014 0
+cogprocCognitiveProcesses  0.0018  0.0012  0.0023 0.0003 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                  Coef    (95%    CI)     SE p
+(Intercept)    -3.3807 -3.3834 -3.378 0.0014 0
+insightInsight  0.0042  0.0025  0.006 0.0009 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3787 -3.3812 -3.3762 0.0013 0.0000
+causeCausal  0.0046  0.0013  0.0080 0.0017 0.0055
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                        Coef    (95%     CI)     SE p
+(Intercept)          -3.3797 -3.3823 -3.3771 0.0013 0
+discrepDiscrepancies  0.0047  0.0025  0.0070 0.0011 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                   Coef    (95%     CI)     SE p
+(Intercept)     -3.3801 -3.3826 -3.3775 0.0013 0
+tentatTentative  0.0067  0.0041  0.0092 0.0013 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                    Coef    (95%     CI)     SE     p
+(Intercept)      -3.3794 -3.3820 -3.3768 0.0013 0e+00
+certainCertainty  0.0050  0.0022  0.0078 0.0014 4e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                         Coef    (95%     CI)     SE p
+(Intercept)           -3.3803 -3.3829 -3.3777 0.0013 0
+differDifferentiation  0.0064  0.0041  0.0087 0.0011 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                              Coef    (95%     CI)     SE      p
+(Intercept)                -3.3790 -3.3816 -3.3763 0.0013 0.0000
+perceptPerceptualProcesses  0.0025  0.0005  0.0046 0.0010 0.0126
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3784 -3.3809 -3.3759 0.0012 0.0000
+seeSee       0.0044  0.0006  0.0081 0.0019 0.0211
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3783 -3.3807 -3.3758 0.0012 0.000
+hearHear     0.0049  0.0008  0.0089 0.0020 0.017
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3778 -3.3802 -3.3754 0.0012 0.0000
+feelFeel     0.0040 -0.0024  0.0103 0.0032 0.2124
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%     CI)     SE      p
+(Intercept)            -3.3775 -3.3800 -3.3750 0.0013 0.0000
+bioBiologicalProcesses  0.0001 -0.0014  0.0016 0.0008 0.9143
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3778 -3.3802 -3.3754 0.0012 0.0000
+bodyBody     0.0023 -0.0019  0.0066 0.0021 0.2727
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE      p
+(Intercept)  -3.3778 -3.3803 -3.3754 0.0012 0.0000
+healthHealth  0.0022 -0.0013  0.0058 0.0018 0.2105
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE      p
+(Intercept)  -3.3768 -3.3793 -3.3744 0.0012 0.0000
+sexualSexual -0.0059 -0.0110 -0.0009 0.0025 0.0184
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE      p
+(Intercept)  -3.3774 -3.3798 -3.3750 0.0012 0.0000
+ingestIngest -0.0007 -0.0038  0.0025 0.0016 0.6625
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE p
+(Intercept)  -3.3819 -3.3847 -3.3791 0.0014 0
+drivesDrives  0.0024  0.0016  0.0033 0.0004 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                          Coef    (95%    CI)     SE      p
+(Intercept)            -3.3767 -3.3794 -3.374 0.0013 0.0000
+affiliationAffiliation -0.0016 -0.0043  0.001 0.0013 0.2227
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                      Coef    (95%     CI)     SE p
+(Intercept)        -3.3793 -3.3818 -3.3768 0.0013 0
+achieveAchievement  0.0050  0.0026  0.0074 0.0012 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3818 -3.3844 -3.3792 0.0013 0
+powerPower   0.0072  0.0054  0.0090 0.0009 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE      p
+(Intercept)  -3.3782 -3.3807 -3.3758 0.0012 0.0000
+rewardReward  0.0036 -0.0003  0.0075 0.0020 0.0634
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3791 -3.3815 -3.3766 0.0012 0
+riskRisk     0.0106  0.0061  0.0151 0.0022 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                     Coef    (95%     CI)     SE p
+(Intercept)       -3.3834 -3.3862 -3.3806 0.0014 0
+relativRelativity  0.0026  0.0019  0.0032 0.0003 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                Coef    (95%     CI)     SE p
+(Intercept)  -3.3800 -3.3826 -3.3774 0.0013 0
+motionMotion  0.0046  0.0025  0.0067 0.0011 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3829 -3.3856 -3.3803 0.0013 0
+spaceSpace   0.0057  0.0044  0.0071 0.0007 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3810 -3.3836 -3.3783 0.0013 0
+timeTime     0.0046  0.0030  0.0062 0.0008 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE p
+(Intercept) -3.3805 -3.3830 -3.3779 0.0013 0
+workWork     0.0059  0.0041  0.0076 0.0009 0
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                  Coef    (95%     CI)     SE     p
+(Intercept)    -3.3789 -3.3814 -3.3765 0.0012 0e+00
+leisureLeisure  0.0065  0.0031  0.0099 0.0017 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3779 -3.3803 -3.3755 0.0012 0.000
+homeHome     0.0043 -0.0017  0.0104 0.0030 0.149
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE     p
+(Intercept) -3.3784 -3.3808 -3.3760 0.0012 0.000
+moneyMoney   0.0049  0.0019  0.0078 0.0015 0.001
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+                 Coef    (95%     CI)     SE     p
+(Intercept)   -3.3783 -3.3807 -3.3759 0.0012 0e+00
+religReligion  0.0149  0.0074  0.0224 0.0037 1e-04
+Large data regression model: bigglm(formula(form[i]), data = cou, maxit = 10^6, family = binomial())
+Sample size =  22682284 
+               Coef    (95%     CI)     SE      p
+(Intercept) -3.3780 -3.3804 -3.3756 0.0012 0.0000
+deathDeath   0.0145  0.0053  0.0236 0.0046 0.0015

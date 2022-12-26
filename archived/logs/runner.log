@@ -1,0 +1,15 @@
+nohup: ignoring input
+Temp monitor PID: 49382
+8_regression.py 
+real	0m59.556s
+user	0m59.717s
+sys	0m4.001s
+
+Finished
+9_model_adequacy.py 
+real	0m2.161s
+user	0m4.297s
+sys	0m0.273s
+
+Finished
+Killing temp monitor.

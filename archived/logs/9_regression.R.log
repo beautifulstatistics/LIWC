@@ -1,0 +1,101 @@
+[1] "Starting Preprocessing"
+[1] "2022-09-23 11:14:34 EDT"
+[1] "Starting first load."
+[1] "2022-09-23 11:14:34 EDT"
+[1] "Starting first model."
+[1] "2022-09-23 11:17:22 EDT"
+[1] 22654377       67
+[1] 22654377
+[1] "First model fit."
+[1] "2022-09-23 11:35:56 EDT"
+[1] "Starting iterations."
+[1] 45351736
+[1] "2/10"
+[1] 68034040
+[1] "3/10"
+[1] 90716338
+[1] "4/10"
+[1] 113398647
+[1] "5/10"
+[1] 136080954
+[1] "6/10"
+[1] 158763264
+[1] "7/10"
+[1] 181445562
+[1] "8/10"
+[1] 204127856
+[1] "9/10"
+[1] 226810201
+[1] "10/10"
+Large data regression model: bigglm(formula(form), data = cou, maxit = 10^6, family = binomial())
+Sample size =  226810201 
+                            Coef    (95%     CI)    SE      p
+(Intercept)              -0.0004 -0.0006 -0.0002 1e-04 0.0001
+iI                        0.0000 -0.0002  0.0001 1e-04 0.6529
+weWe                      0.0000 -0.0005  0.0004 2e-04 0.8471
+youYou                    0.0000 -0.0002  0.0001 1e-04 0.6079
+sheheSheHe                0.0001 -0.0004  0.0005 2e-04 0.7647
+theyThey                  0.0002 -0.0006  0.0010 4e-04 0.6160
+youpl                     0.0001 -0.0008  0.0010 4e-04 0.8872
+ipronImpersonalPronouns   0.0000 -0.0002  0.0002 1e-04 0.7765
+prepPrepositions          0.0000 -0.0001  0.0002 1e-04 0.8303
+auxverbAuxiliaryVerbs     0.0000 -0.0002  0.0003 1e-04 0.8967
+adverbAdverbs             0.0000 -0.0001  0.0001 1e-04 0.8976
+conjConjunctions          0.0000 -0.0002  0.0002 1e-04 0.9439
+negateNegations           0.0000 -0.0002  0.0003 1e-04 0.8468
+quanunit                  0.0000 -0.0002  0.0002 1e-04 0.9416
+prepend                   0.0000 -0.0003  0.0003 1e-04 0.9999
+specart                   0.0000 -0.0003  0.0003 2e-04 0.9776
+focuspastPastFocus        0.0001 -0.0003  0.0004 2e-04 0.7627
+focuspresentPresentFocus  0.0000 -0.0004  0.0003 2e-04 0.8084
+focusfutureFutureFocus    0.0000 -0.0003  0.0003 1e-04 0.9500
+progm                     0.0000 -0.0003  0.0004 2e-04 0.8219
+modal_pa                  0.0000 -0.0002  0.0002 1e-04 0.8936
+general_pa                0.0000 -0.0001  0.0001 1e-04 0.8921
+compareComparisons        0.0000 -0.0002  0.0002 1e-04 0.9404
+interrogInterrogatives    0.0000 -0.0004  0.0004 2e-04 0.8671
+numberNumbers             0.0000 -0.0002  0.0002 1e-04 0.9671
+quantQuantifiers          0.0000 -0.0002  0.0001 1e-04 0.6376
+posemoPositiveEmotions    0.0000 -0.0002  0.0001 1e-04 0.6839
+anxAnx                    0.0000 -0.0005  0.0005 3e-04 0.9873
+angerAnger                0.0001 -0.0003  0.0004 2e-04 0.7882
+sadSad                    0.0000 -0.0004  0.0004 2e-04 0.8849
+familyFamily              0.0000 -0.0003  0.0003 2e-04 0.8798
+friendFriends             0.0000 -0.0006  0.0005 3e-04 0.8896
+femaleFemale             -0.0001 -0.0004  0.0003 2e-04 0.6687
+maleMale                  0.0000 -0.0004  0.0004 2e-04 0.8452
+insightInsight            0.0000 -0.0002  0.0002 1e-04 0.9462
+causeCausal               0.0000 -0.0002  0.0003 1e-04 0.8289
+discrepDiscrepancies      0.0000 -0.0003  0.0003 1e-04 0.9457
+tentatTentative           0.0000 -0.0002  0.0003 1e-04 0.7484
+certainCertainty          0.0000 -0.0002  0.0002 1e-04 0.9206
+differDifferentiation     0.0000 -0.0003  0.0002 1e-04 0.9208
+seeSee                    0.0000 -0.0003  0.0002 1e-04 0.9554
+hearHear                  0.0000 -0.0002  0.0003 1e-04 0.8804
+feelFeel                  0.0000 -0.0004  0.0004 2e-04 0.9977
+bodyBody                  0.0000 -0.0003  0.0003 1e-04 0.9999
+healthHealth             -0.0001 -0.0003  0.0002 1e-04 0.6511
+sexualSexual              0.0000 -0.0004  0.0003 2e-04 0.8016
+ingestIngest              0.0000 -0.0002  0.0002 1e-04 0.9045
+affiliationAffiliation    0.0001 -0.0001  0.0003 1e-04 0.5450
+achieveAchievement       -0.0001 -0.0003  0.0002 1e-04 0.5971
+powerPower                0.0001 -0.0001  0.0002 1e-04 0.3147
+rewardReward              0.0000 -0.0003  0.0003 1e-04 0.9987
+riskRisk                  0.0001 -0.0003  0.0004 2e-04 0.6926
+motionMotion              0.0000 -0.0002  0.0001 1e-04 0.6096
+spaceSpace                0.0000 -0.0001  0.0001 1e-04 0.9012
+timeTime                  0.0000 -0.0001  0.0002 1e-04 0.8761
+workWork                  0.0000 -0.0001  0.0002 1e-04 0.6334
+leisureLeisure           -0.0001 -0.0003  0.0002 1e-04 0.6297
+homeHome                 -0.0001 -0.0004  0.0003 2e-04 0.7735
+moneyMoney               -0.0001 -0.0003  0.0001 1e-04 0.5496
+religReligion             0.0000 -0.0004  0.0005 2e-04 0.8683
+deathDeath                0.0000 -0.0005  0.0006 3e-04 0.8874
+swearSwear                0.0001 -0.0006  0.0008 4e-04 0.8554
+netspeakNetspeak          0.0000 -0.0003  0.0003 2e-04 0.9500
+assentAssent              0.0000 -0.0001  0.0002 1e-04 0.7331
+nonfluNonfluencies        0.0000 -0.0004  0.0004 2e-04 0.9862
+fillerFillerWords         0.0000 -0.0003  0.0003 2e-04 0.9352
+image                     1.0004  0.9995  1.0013 4e-04 0.0000
+[1] "Finished."
+[1] "2022-09-23 12:08:51 EDT"
