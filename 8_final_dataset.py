@@ -16,7 +16,8 @@ def main(hypothesis_cols):
     predictor_cols = [item for sublist in hypothesis_cols for item in sublist]
     response_cols = ['censored','not_censored']
 
-    X = pd.read_csv("./data/consolidated_full.csv",
+    consolidated_path = os.path.join('data','consolidated_full.csv')
+    X = pd.read_csv(consolidated_path,
                 usecols=predictor_cols + response_cols)
 
     for index, cols in enumerate(hypothesis_cols):
@@ -27,11 +28,15 @@ def main(hypothesis_cols):
         
         X_sub.to_csv(model_path,index=False)
 
-
 if __name__ == "__main__":
-    hypothesis_cols = [['relativ',
-                        'affect',
+    hypothesis_cols = [['affect',
+                        'social',
+                        'cogproc',
+                        'percept',
+                        'drives',
+                        'relativ',
                         'ppron',
-                        'drives']]
+                        'totallen',]]
+
 
     main(hypothesis_cols)

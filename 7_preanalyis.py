@@ -1,3 +1,4 @@
+import os
 import dask.dataframe as dd
 import dask
 from dask.diagnostics import ProgressBar
@@ -6,19 +7,16 @@ import time
 from tqdm import tqdm
 tqdm.pandas()
     
-
-from functools import partial
-print = partial(print,flush=True)
-
 def return_time():
     return time.strftime('%H:%M', time.localtime())
 
 if __name__ == "__main__":
     print(return_time())
-    ProgressBar(dt=5).register()
+    ProgressBar(dt=60).register()
     dask.config.set(scheduler='processes',num_workers=7)
-        
-    X = dd.read_csv("./data/counts.csv/*.part",engine='python')
+    
+    counts_path = os.path.join('data','counts','*.part')
+    X = dd.read_csv(counts_path,engine='python')
 
     X.columns = [x.split("(")[0] for x in X.columns]
 
@@ -34,5 +32,6 @@ if __name__ == "__main__":
 
     print(return_time())
 
-    Xg.to_csv('./data/consolidated_full.csv',index=True)
+    consolidated_path = os.path.join('data','consolidated_full.csv')
+    Xg.to_csv(consolidated_path,index=True)
     print(return_time())

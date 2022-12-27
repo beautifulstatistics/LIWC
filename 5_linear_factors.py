@@ -1,9 +1,12 @@
+import os
 import re
-with open("./data/dictionaries/Factors_nesting_adjusted_.txt",'r') as f:
+factors_path = os.path.join('dictionaries','Factors_nesting_adjusted_.txt')
+with open(factors_path,'r') as f:
     hier = f.read()
 
 k = re.sub(" |[0-9]",'',hier)
-# k = re.sub("\(.+\)","",k)
+k = re.sub("\(.+","",k)
+
 previous_count = 0
 previous_line = ''
 masterh = []
@@ -26,7 +29,6 @@ for line in k.split("\n"):
     
     previous_line = line
 
-with open('./data/dictionaries/linear_factors.txt','w') as f:
+result_path = os.path.join('dictionaries','linear_factors.txt')
+with open(result_path,'w') as f:
     f.write("\n".join(master))
-
-print("finished.")

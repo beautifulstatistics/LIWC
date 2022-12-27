@@ -8,18 +8,18 @@ import multiprocessing as mp
 
 from collections import defaultdict, OrderedDict
 
-from functools import partial
-print = partial(print,flush=True)
-
 def return_time():
     return time.strftime('%H:%M', time.localtime())
 
 if __name__ == '__main__':
     print("Prepreprocessing started.",return_time())
-    parse, category_names = liwc.load_token_parser(
-        './data/dictionaries/LIWC2015 Dictionary - Chinese (Simplified)(adjusted).dic')
 
-    with open("./data/dictionaries/linear_factors.txt",'r') as f:
+    dictionary_path = os.path.join('dictionaries',
+    'LIWC2015 Dictionary - Chinese (Simplified)(adjusted).dic')
+    parse, category_names = liwc.load_token_parser(dictionary_path)
+
+    linear_factor_path = os.path.join('dictionaries','linear_factors')
+    with open(linear_factor_path,'r') as f:
         lf = defaultdict(lambda:[])
         for line in f:
             line = line.split("/")
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 lfl.sort(key=lambda x: int(x[-1]),reverse=True)
                 lfo[entry] = lfl
     
-    category_names += ['persconc(PersonalConcerns)','totallen','tokencount','notdict']
+    category_names += ['persconc','totallen','tokencount','notdict']
     category_names += ['o' + x[:-1] for x in lfo.keys()]
 
     def enforce_nesting(counts):
@@ -54,13 +54,13 @@ if __name__ == '__main__':
         return counts
 
     def fill_missing_category(category):
-        if category in ['work(Work)',\
-                        'leisure(Leisure)',\
-                        'home(Home)',\
-                        'money(Money)',\
-                        'relig(Religion)',\
-                        'death(Death)']:
-            return 'persconc(PersonalConcerns)'
+        if category in ['work',\
+                        'leisure',\
+                        'home',\
+                        'money',\
+                        'relig',\
+                        'death']:
+            return 'persconc'
         return None
 
     def count(weibo):
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     
     def count_df(file):
         part = int(file.split(".")[0])
-        file = os.path.join("./data/segmented.csv",file) 
+        file = os.path.join('data','segmented',file) 
         df = pd.read_csv(file,engine='python')
 
         counts = df.text.apply(count)
@@ -90,11 +90,14 @@ if __name__ == '__main__':
 
         df = df.drop('text',axis=1)
         df = pd.concat([df,counts],axis=1)
-        df.to_csv(f"./data/counts.csv/{part}.part",index=False)
+        csv_path = os.path.join('data','counts',f'{part}.part')
+        df.to_csv(csv_path,index=False)
         return None
 
-    os.makedirs("./data/counts.csv",exist_ok=True)
-    files = os.listdir("./data/segmented2.csv")
+    count_path = os.path.join('data','counts')
+    os.makedirs(count_path,exist_ok=True)
+    segmented_path = os.path.join('data','segmented')
+    files = os.listdir(segmented_path)
     nparts = len(files)
 
     print("Processing Started.", return_time())

@@ -2,5 +2,6 @@
 /models
 /logs
 /reports
+/archived
 /stanford-segmenter
 /__pycache__
