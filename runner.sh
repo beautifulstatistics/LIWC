@@ -12,7 +12,7 @@ export PYTHONUNBUFFERED="1"
 sensors_pid=$!
 echo "Temp monitor PID: "$sensors_pid
 
-ls | grep -P "^[8]_" | while read -r line ;
+ls | grep -P "^[4]_" | while read -r line ;
 do
     echo -n $line" "
 

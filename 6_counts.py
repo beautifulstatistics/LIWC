@@ -18,7 +18,7 @@ if __name__ == '__main__':
     'LIWC2015 Dictionary - Chinese (Simplified)(adjusted).dic')
     parse, category_names = liwc.load_token_parser(dictionary_path)
 
-    linear_factor_path = os.path.join('dictionaries','linear_factors')
+    linear_factor_path = os.path.join('dictionaries','restructure_factors.txt')
     with open(linear_factor_path,'r') as f:
         lf = defaultdict(lambda:[])
         for line in f:

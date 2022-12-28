@@ -29,6 +29,6 @@ for line in k.split("\n"):
     
     previous_line = line
 
-result_path = os.path.join('dictionaries','linear_factors.txt')
+result_path = os.path.join('dictionaries','restructured_factors.txt')
 with open(result_path,'w') as f:
     f.write("\n".join(master))

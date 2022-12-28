@@ -24,15 +24,6 @@ def download_raw():
             bar.update(size)
     print("Download Complete")
 
-
-# def download_raw():
-#     raw_data_path = os.path.join('data','raw','raw_data.zip')
-#     url = "https://datahub.hku.hk/ndownloader/articles/16674565/versions/1"
-#     r = requests.get(url, allow_redirects=True)
-#     with open(raw_data_path, 'wb') as fd:
-#         fd.write(r.content)
-#     print("Download Complete")
-
 def extract_files():
     print(os.getcwd())
     raw_data_path = os.path.join('data','raw','raw_data.zip')
@@ -42,17 +33,17 @@ def extract_files():
     os.makedirs(weeks_path,exist_ok=True)
     os.makedirs(zip_path,exist_ok=True)
     
-    # with zipfile.ZipFile(raw_data_path, 'r') as archive:
-    #     for file in archive.namelist():
-    #         if file.startswith('week'):
-    #             archive.extract(file,zip_path)
-    #             print(file)
+    with zipfile.ZipFile(raw_data_path, 'r') as archive:
+        for file in archive.namelist():
+            if file.startswith('week'):
+                archive.extract(file,zip_path)
+                print(file)
 
     for i in range(1,53):
         file = os.path.join('data','zip',f'week{i}.zip')
         with zipfile.ZipFile(file, 'r') as archive:
             archive.extractall(weeks_path)
-            print(weeks_path)
+            print(file)
 
     print('CSV Week Files Extracted')
 
@@ -65,7 +56,7 @@ def clean_up():
                 print(f'Deleted {name}')
 
 def main():
-    # download_raw()
+    download_raw()
     extract_files()
     clean_up()
 
