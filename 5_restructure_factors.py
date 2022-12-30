@@ -1,5 +1,6 @@
 import os
 import re
+
 factors_path = os.path.join('dictionaries','Factors_nesting_adjusted_.txt')
 with open(factors_path,'r') as f:
     hier = f.read()

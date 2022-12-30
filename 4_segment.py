@@ -34,8 +34,8 @@ os.makedirs(seg_path,exist_ok=True)
 
 t1 = time.time()
 with mp.Pool(processes=7) as pool:
-    for part in pool.imap_unordered(core,files):
-        print((part+1)/filel,end=": ")
-        print((time.time()-t1)/(part+1)/60/60*(filel - part-1),flush=True)
+    for index, part in enumerate(pool.imap_unordered(core,files)):
+        print(f'{(index+1)/filel*100:.2f}% Complete',end=": ")
+        print(f'{(time.time()-t1)/(index+1)/60/60*(filel - index - 1):.2f} hours left',flush=True)
 
 print((time.time()-t1)/60)

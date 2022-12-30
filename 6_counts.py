@@ -18,7 +18,7 @@ if __name__ == '__main__':
     'LIWC2015 Dictionary - Chinese (Simplified)(adjusted).dic')
     parse, category_names = liwc.load_token_parser(dictionary_path)
 
-    linear_factor_path = os.path.join('dictionaries','restructure_factors.txt')
+    linear_factor_path = os.path.join('dictionaries','restructured_factors.txt')
     with open(linear_factor_path,'r') as f:
         lf = defaultdict(lambda:[])
         for line in f:
@@ -27,6 +27,7 @@ if __name__ == '__main__':
             for i, lineh in enumerate(line):
                 if i < len(line)-1:
                     lf[lineh] += [line[i+1]]
+
             lfo = OrderedDict()
             lfko = list(lf.keys())
             lfko.sort(key=lambda x: int(x[-1]),reverse=True)
@@ -91,6 +92,7 @@ if __name__ == '__main__':
         df = df.drop('text',axis=1)
         df = pd.concat([df,counts],axis=1)
         csv_path = os.path.join('data','counts',f'{part}.part')
+        df.columns = [x.split('(')[0] for x in df.columns]
         df.to_csv(csv_path,index=False)
         return None
 
@@ -105,8 +107,8 @@ if __name__ == '__main__':
     with mp.Pool(processes=6) as pool:
         for i, _ in enumerate(pool.imap_unordered(count_df,files)):
             t2 = time.time()
-            if i % int(nparts/50) == 0:
+            if i % (int(nparts/50)+1) == 0:
                 print(f"{i+1}/{nparts} finished. ", end='')
-                print((t2-t1)/(i+1)*(nparts-(i+1))/60,'mins left.')
+                print(f"{(t2-t1)/(i+1)*(nparts-(i+1))/60:.2f}",'mins left.')
     
     print("Finished.", return_time())
