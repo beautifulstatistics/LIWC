@@ -17,7 +17,6 @@
 
 # #### Hypothesis 1: Collective Action
 # - ppron
-# - drive
 # - relativ
 # - percept
 
@@ -38,8 +37,7 @@
 # #### Hypothesis 5: Broad search of AND space. (Decision Tree)
 
 HYPOTHESISES = [
-                ['ppron','drives','relativ','percept'],
+                ['ppron','relativ','percept','drives'],
                 ['cogproc','totallen'],
-                ['posemo','negemo'],
-                ['bio','ppron','social','persconc']
+                ['posemo','negemo']
             ]
