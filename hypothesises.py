@@ -28,16 +28,10 @@
 # - posemo
 # - negemo
 
-# #### Hypothesis 4: Personal Life
-# - bio
-# - ppron
-# - social
-# - persconc
-
 # #### Hypothesis 5: Broad search of AND space. (Decision Tree)
 
 HYPOTHESISES = [
-                ['ppron','relativ','percept','drives'],
-                ['cogproc','totallen'],
-                ['posemo','negemo']
+                ['ppron','relativ','percept','tokencount'],
+                ['cogproc','tokencount'],
+                ['posemo','negemo','tokencount'],
             ]

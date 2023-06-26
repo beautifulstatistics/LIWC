@@ -1,0 +1,27 @@
+---
+title: "Binomial Model Adequecy"
+author: "Wayne Kenney"
+date: "2023-06-25"
+output: pdf_document
+---
+
+# What to check for
+
+To do a full check of model adequacy these are what seems to be necessary
+
+1. *Linearity*
+2. *Independent Residuals*
+3. *No Separation*
+4. *No Overdispersion*
+5. *No Multicollinearity*
+
+These are the necessary checks in linear regression
+
+1. *Normal Residuals*
+2. *Independent Residuals*
+3. *Linearity*
+4. *No Influential Points*
+6. *No Multicollinearity*
+
+
+

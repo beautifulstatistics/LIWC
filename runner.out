@@ -1,0 +1,7 @@
+Temp monitor PID: 75336
+Mem monitor PID: 75337
+7_consolidate_presence.py 4837.27user 171.01system 1:23:32elapsed 99%CPU (0avgtext+0avgdata 7395704maxresident)k
+38826528inputs+35349776outputs (1major+42666765minor)pagefaults 0swaps
+Finished
+7_decision_model Killing temp monitor.
+Killing mem monitor.

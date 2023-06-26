@@ -6,3 +6,6 @@
 /stanford-segmenter
 /__pycache__
 /graphs
+exploration.*
+
+/plots

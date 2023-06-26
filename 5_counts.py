@@ -12,8 +12,6 @@ def return_time():
     return time.strftime('%H:%M', time.localtime())
 
 if __name__ == '__main__':
-    print("Prepreprocessing started.",return_time())
-
     dictionary_path = os.path.join('dictionaries',
     'LIWC2015 Dictionary - Chinese (Simplified)(adjusted).dic')
     parse, category_names = liwc.load_token_parser(dictionary_path)
@@ -62,12 +60,12 @@ if __name__ == '__main__':
                         'relig',\
                         'death']:
             return 'persconc'
-        return None
 
     def count(weibo):
         weibo = str(weibo)
         counts = Counter()
-        counts['totallen'] = len(weibo)
+        weibo_clean = weibo.replace(' ','').replace('\t','').replace('\n','')
+        counts['totallen'] = len(weibo_clean)        
         for token in weibo.split():
             counts.update(['tokencount'])
             for category in parse(token):
@@ -81,34 +79,32 @@ if __name__ == '__main__':
         return counts
     
     def count_df(file):
-        part = int(file.split(".")[0])
-        file = os.path.join('data','segmented',file) 
         df = pd.read_csv(file,engine='python')
 
         counts = df.text.apply(count)
-        counts = pd.DataFrame.from_records(counts.values,columns=category_names)
+        counts = pd.DataFrame.from_records(counts.values, columns=category_names)
         counts = counts.fillna(0).astype(np.int16)
 
         df = df.drop('text',axis=1)
         df = pd.concat([df,counts],axis=1)
-        csv_path = os.path.join('data','counts',f'{part}.part')
+        
+        df = df.astype(np.uint8)
+        file = os.path.basename(file)
+        csv_path = os.path.join('data','counts',file)
         df.columns = [x.split('(')[0] for x in df.columns]
-        df.to_csv(csv_path,index=False)
-        return None
+        df.to_csv(csv_path, index = False)
 
     count_path = os.path.join('data','counts')
-    os.makedirs(count_path,exist_ok=True)
+    os.makedirs(count_path,exist_ok = True)
     segmented_path = os.path.join('data','segmented')
-    files = os.listdir(segmented_path)
-    nparts = len(files)
+    files = [os.path.join(segmented_path,file) for file in os.listdir(segmented_path)]
+    filel = len(files)
 
     print("Processing Started.", return_time())
     t1 = time.time()
     with mp.Pool(processes=6) as pool:
-        for i, _ in enumerate(pool.imap_unordered(count_df,files)):
-            t2 = time.time()
-            if i % (int(nparts/50)+1) == 0:
-                print(f"{i+1}/{nparts} finished. ", end='')
-                print(f"{(t2-t1)/(i+1)*(nparts-(i+1))/60:.2f}",'mins left.')
+        for index, _ in enumerate(pool.imap_unordered(count_df,files)):
+            print(f'{(index+1)/filel*100:.2f}% Complete',end=": ")
+            print(f'{(time.time()-t1)/(index+1)/60/60*(filel - index - 1):.2f} hours left',flush=True)
     
     print("Finished.", return_time())
